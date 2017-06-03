@@ -1,7 +1,6 @@
 todo:
--add pug
 -seperte module file/folder structure
--combine same props to utility classes*
+-combine same props to utility classes* / clean up the commented out code
 (-added new technologies, styleguides, module-centric project file structure)
 - clickable contact buuble
 

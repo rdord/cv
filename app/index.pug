@@ -1,0 +1,232 @@
+extends layouts/default
+
+block content
+  // I use a <div> because I want the headings for the body of the page (not a specific section)
+  .ro-Hero
+    header.ro-Hero-header
+      p.ro-Hero-title.u-title.is-animated Page Author
+      h1.ro-Hero-heading Roland Dordevic
+      span.ro-Hero-subheading
+        | Independent Front-End Engineer
+    p.ro-Hero-links.is-animated
+      // Opening the links in a new window so that the visitor doesn't leave the page
+      a(href='https://github.com/rdorde?tab=repositories', target='_blank') Github
+      | ,
+      a(href='http://list.strangeshould.com/', target='_blank') Tumblr
+    // <p class="ro-Hero-tag">UI 🐳</p>
+    // <p class="ro-Hero-tag">UI 💛</p>
+    // <p class="ro-Hero-tag">UI<span class="ro-Hero-tagIcon">❤️</span></p>
+  //
+    <a href="mailto:rdorde@gmail.com" class="ro-Hero ro-Hero--availability is-animated">
+    <p class="ro-Hero-header">
+    <span class="ro-Hero-heading">AVAILABLE</span><br>
+    <span class="ro-Hero-subheading">for CSS3 and javascript work on an interesting project.</span>
+    </p>
+    <p class="ro-Hero-links">
+    <span>Contact</span>
+    </p>
+    </a>
+  section.ro-Xp
+    .ro-Xp-body
+      p
+        | Front-end work on 50+ projects (mainly for various U.S. clients). Experience in developing, mentoring, recruiting, leading front-end teams, reviewing code, collaborating with designers, managers and clients. Worked in Ljubljana and San Francisco.
+      p Showed up at conferences and meetups across Europe.
+      .ro-Hero-links.ro-Xp-links.is-animated
+        a(href='https://www.linkedin.com/in/rdorde/') Linkedin
+  section.ro-Work.u-holder
+    h1.ro-Work-heading.u-title Select work
+    .ro-Work-body
+      .ro-Work-content
+        .ro-Work-item.is-doubleWidth
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width1
+            h2.ro-Work-companyType Mobile app startup in San Francisco
+          .ro-Work-companyContent.u-2col
+            p
+              | Company's website with scrolling to full page sections, SVG animation, customized slider animation and additional CSS3 animations.
+            p Website for searching, filtering and viewing API's public data.
+            // <p>Administration dashboard for overviewing app's data. React.js web app with Material-UI, Flow, FixedDataTable 2 and d3.js charts.</p>
+            // <p>Developers panel for registering a 3rd party apps, getting an API key, setting permissions etc. React.js app with Material-UI and MobX.</p>
+            p Template for the emails the app sends.
+            p Administration dashboard for overviewing app's data.
+            p
+              | Developers panel for registering 3rd party apps, getting API keys, setting permissions etc.
+          .ro-Visual-shape2
+          .ro-Visual-shape3
+        .ro-Work-item
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width2
+            h2.ro-Work-companyType Web app startup in San Francisco
+          .ro-Work-companyContent
+            p UI for the large subscription-based app.
+            p Templates for the emails the app sends.
+            p Startup's website.
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width3
+            h2.ro-Work-companyType Non-profit company in San Francisco
+          .ro-Work-companyContent
+            p Site with 80+ reusable modules and 50+ templates.
+          .ro-Visual-shape4
+        .ro-Work-item
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width4
+            h2.ro-Work-companyType Custom API service provider from San Francisco
+          .ro-Work-companyContent
+            p Company's homepage that showcases their services. CSS3 feature-heavy UI.
+            p Company's website with 30+ custom-design pages.
+            p Website for a company's products. 
+            p Website for a group the company leads. 
+            p Yearly landing page for the event the company host.
+          .ro-Visual-shape6
+        .ro-Work-item
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width5
+            h2.ro-Work-companyType Fortune 500 company
+          .ro-Work-companyContent
+            p Countdown website to the film's release date.
+            p
+              | Multilingual media website where the film can be viewed with additional information about the project, characters etc.
+          .ro-Visual-shape7
+        //
+          <div class="ro-Work-item">
+          <header class="ro-Work-itemHeader">
+          <span class="ro-Work-company">Protected</span>
+          <h2 class="ro-Work-companyType"></h2>
+          </header>
+          <p></p>
+          </div>
+      .ro-Work-content
+        .ro-Work-item.is-doubleWidth
+          header.ro-Work-itemHeader
+            span.ro-Work-company.u-width6
+            span.ro-Work-company.u-width7
+            span.ro-Work-company.u-width8
+            span.ro-Work-company.u-width9
+            h2.ro-Work-companyType Misc.
+          .ro-Work-companyContent
+            p Website upgrades and email newsletters for a San Francisco marketing agency.
+            p Landing page for a company with the top 100 Alexa rank.
+            p Website for an QInc. 5000 company.
+            p Product pages for the global leader in their field from Chicago.
+          .ro-Visual-shape5
+  section.ro-Tools.u-holder
+    // <h1 class="ro-Tools-heading u-title">Tools</h1>
+    h1.ro-Tools-heading.u-title Using
+    ul.ro-Tools-list
+      li css3
+      li cssnext
+      li sass
+      li less
+      li html5
+      li pug/jade
+      li javascript
+      li (ecmascript 2015)
+      li.ro-Tools-emptyItem  
+      li.ro-Tools-emptyItem  
+      li bootstrap
+      li material-ui
+      li bulma
+      li jquery
+      li p5.js
+      li d3.js
+      li react
+      // <li>flow</li>
+      li mobx
+      li.ro-Tools-emptyItem  
+      li.ro-Tools-emptyItem  
+      li gulp
+      li grunt
+      li webpack
+      li yeoman
+      li git
+      li suite css
+      li bem
+      li smacss
+  //
+    <section class="ro-Quotes">
+    <blockquote>
+    Great blood test results.
+    <footer><cite>- Doctor</cite></footer>
+    </blockquote>
+    <blockquote>
+    Create a ton.
+    <footer><cite>- Me to Myself</cite></footer>
+    </blockquote>
+    <blockquote>
+    Question the default.
+    <footer><cite>- Adam Grant (Originals)</cite></footer>
+    </blockquote>
+    <blockquote>
+    Bird can't fly in a cage.
+    <footer><cite>- Kanye West (Waves)</cite></footer>
+    </blockquote>
+    </section>
+  //
+    <section class="ro-Strongpoints u-holder">
+    <h1 class="ro-Strongpoints-heading u-title">Strongpoints</h1>
+    <ul>
+    <li>precision</li>
+    </ul>
+    </section>
+  //
+    <section class="ro-Interests u-holder">
+    <h1 class="ro-Interests-heading u-title">Interests</h1>
+    </section>
+  div(style='height:1000px;')
+  .ro-Overlay.is-hidden
+    ul.ro-Overlay-list
+      li question the defaults
+      li create a ton
+      li shake thing up
+      li creativity over efficientcy
+      li can not and won't conform
+      li you are not your mind
+      li no pressure, I was build for this
+      li Only those who fly knows why the birds sing
+      li Bird can't fly in a cage
+      li Be as crazy as you want
+      li alive with creativity
+      li great blood test results
+      li know how to get yourself in a good mood
+      li Rice milk
+      li Thank you
+      li You are good
+      li meditate, create, move, absorb
+      li come as you are
+  ul.ro-Statments
+    li question the defaults
+    li create a ton
+    li can not and won't conform
+    li creativity > efficientcy
+    li shake thing up
+    li you are not your mind
+    li no pressure, I was build for this
+    li Only those who fly knows why the birds sing
+    li Bird can't fly in a cage
+    li Be as crazy as you want
+    li alive with creativity
+    li great blood test results
+    li know how to get yourself in a good mood
+    li Rice milk
+    // <li>Thank you</li>
+    li You are good
+    li meditate, create, move, absorb
+    li come as you are
+  #ro-Visual.ro-Visual
+    // <div class="ro-Visual-shape1 ro-Visual-shape1Border2 layer" data-depth="0.22"></div>
+    .ro-Visual-shape1.ro-Visual-shape1Border.layer(data-depth='0.20')
+    .ro-Visual-shape1.layer(data-depth='0.10')
+      // <a href="mailto:rdorde@gmail.com" class="ro-Hero ro-Hero--availability is-animated layer"  data-depth="0.30">
+      a.ro-Hero.ro-Hero--availability.is-animated.layer(href='mailto:rdorde@gmail.com')
+        p.ro-Hero-header
+          span.ro-Hero-heading AVAILABLE
+          br
+          // <span class="ro-Hero-subheading">for CSS3 and javascript work on an interesting project.</span>
+          span.ro-Hero-subheading for CSS3 and javascript work on an premium project.
+        p.ro-Hero-links
+          span Contact
+    //
+      <div class="ro-Visual-shape2 layer" data-depth="0"></div>
+      <div class="ro-Visual-shape3 layer" data-depth="0"></div>
+      <div class="ro-Visual-shape4 layer" data-depth="0"></div>
+      <div class="ro-Visual-shape5 layer" data-depth="0"></div>
