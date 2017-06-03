@@ -3,7 +3,7 @@ todo:
 -seperte module file/folder structure
 -combine same props to utility classes*
 (-added new technologies, styleguides, module-centric project file structure)
-
+- clickable contact buuble
 
  light, shapes, colors, textures
 
