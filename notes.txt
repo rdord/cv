@@ -1,10 +1,4 @@
-todo:
--seperte module file/folder structure
--combine same props to utility classes* / clean up the commented out code
-(-added new technologies, styleguides, module-centric project file structure)
-- clickable contact buuble
-
- light, shapes, colors, textures
+light, shapes, colors, textures
 
 situation needs to be either dealth with or accepted
 
@@ -90,3 +84,52 @@ when you see choose to see yourself as a living miracle,
 you become one. 
 
 this is how magic is made.﻿
+
+----
+
+offbeat
+unique
+freed
+
+---
+
+creative dev:
+animation
+interactive experiances
+create visual pieces
+
+---
+APPLE 
+
+Why (cause, purpose, belive, dream):
+Everything we do, we belive in challanging the status quo, we belive in thinking differently.
+
+How:
+The way we challange the status quo in by making our products beautifuly designed, simple to use and user friendly.
+
+What:
+We just happen to make great computers.
+
+Wanna buy one?
+
+---
+TiVO 
+
+Why (cause, purpose, belive, dream):
+If you're that kind of person who want to have a total control over every aspect of your life, boy, do we have product for you.
+
+How:
+It pauses live tv, skips commercials, memorizes your viewing habits etc.
+
+What:
+
+
+---
+Dr. King
+
+Why (cause, purpose, belive, dream):
+I belive...
+
+How:
+
+What:
