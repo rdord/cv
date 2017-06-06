@@ -1,0 +1,35 @@
+@keyframes moveInShapes {
+  from { transform: translateY(0px); }
+  to { transform: translateY(50px); }
+}
+
+.ro-Visual {
+  z-index: -1;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: moveInShapes 2.4s;
+  animation-fill-mode: forwards; 
+
+  [class^='ro-Visual-shape'] {
+    position: absolute !important;
+    border-radius: 50%;
+  } 
+}
+
+.ro-Visual-shape1 {
+  @include size(716px);
+
+  left: auto !important;
+  top: 10px !important;
+  right: 224px !important;
+  // background: radial-gradient(ellipse at 57% 47%, #77A1D3 0%, #79cbca 60%, #e684ae 94%);
+  background:  #FF91AF;
+  z-index: -2;
+}
+
+.ro-Visual-shape1Border {
+  filter: hue-rotate(10deg);
+}

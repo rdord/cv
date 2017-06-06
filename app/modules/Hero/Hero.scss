@@ -1,0 +1,106 @@
+@keyframes moveIn {
+  from { transform: translateY(0px); }
+  to { transform: translateY(3px); }
+}
+
+// .ro-Hero-title {
+//   padding: 0 3px 6px;
+//   position: relative;
+//   top: 3px;
+//   visibility: hidden;
+
+//   &.is-animated {
+//     top: 0;
+//     animation: moveIn .8s;
+//     animation-delay: .2s;
+//     animation-fill-mode: forwards;    
+//   }
+// }
+
+// .ro-Hero-tag,
+.ro-Hero-heading {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 57px;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0;
+}
+
+// .ro-Hero-tag {
+//   position: absolute;
+//   top: 290px;
+//   right: 400px;
+// }
+
+// .ro-Hero-tagIcon {
+//   font-size: 12px;
+//   padding-left: 1px;
+//   cursor: pointer;
+//   filter: blur(0px);
+//   transition: filter .5s; 
+//   position: relative;
+
+//   &.is-shattered {
+//     filter: blur(100px) ;
+//   }
+
+//   // for larger hoverable area
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     top: -10px;
+//     right: -10px;
+//     bottom: -10px;
+//     left: -10px;
+//   }
+// }
+
+.ro-Hero-subheading {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  margin: 3px 4px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.03em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ro-Hero-links {
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 3px;
+  margin-top: 9px;
+
+  &.is-animated {
+    opacity: 0;
+    animation: fadeIn 2.4s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;    
+  }
+}
+
+.ro-Hero--availability {
+  display: inline-block;
+  padding: 15px 40px;
+  margin-left: -219px;
+  position: absolute;
+  top: 169px !important;
+  left: 50% !important;
+
+  &.is-animated {
+    opacity: 0;
+    animation: fadeIn 4.8s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;    
+  }
+
+  .ro-Hero-header {
+    margin: 0;
+  }  
+}

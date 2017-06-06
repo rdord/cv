@@ -15,6 +15,7 @@ gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.if(dev, $.sourcemaps.init()))
+    .pipe($.wait(50))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
@@ -123,8 +124,8 @@ gulp.task('serve', () => {
     ]).on('change', reload);
 
     gulp.watch('app/**/*.pug', ['views']);
-    gulp.watch('app/styles/**/*.scss', ['styles']);
-    gulp.watch('app/scripts/**/*.js', ['scripts']);
+    gulp.watch('app/**/*.scss', ['styles']);
+    gulp.watch('app/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('bower.json', ['fonts']);
   });
