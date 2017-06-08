@@ -6,12 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding: 87px 12px 0;
   counter-reset: company;
+  // padding: 48px 12px 0;
+  // padding: 34px 12px 0;
+  // padding: 40px 12px 0;
+  padding: 49px 12px 0;
 
-  @media (min-width: 1530px) {
-    padding: 87px 40px 0
-  }
+  @include media("≥G") {
+    padding-top: 31px;
+  }  
+
+  @include media("≥W") {
+    padding: 87px 40px 0;
+  }  
 }
 
 a {
@@ -19,6 +26,11 @@ a {
     color: rgba(26, 13, 171, 0.87);
     text-decoration: none;
     outline: 0;
+    border-bottom: 1px solid;
+
+    @include media("≥X") {
+      border-bottom: none;
+    }  
   }
 
   &:hover {

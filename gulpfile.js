@@ -15,7 +15,7 @@ gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.if(dev, $.sourcemaps.init()))
-    .pipe($.wait(50))
+    .pipe($.wait(200))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,

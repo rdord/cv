@@ -1,0 +1,163 @@
+.ro-Work {
+  padding-bottom: 30px;
+
+  @include media("≥X") { 
+    padding-bottom: 44px;
+  }
+}
+
+.ro-Work-body {
+  padding-left: 3px;
+
+  @include media("≥X") { 
+    padding-left: 15px;
+  }
+}
+
+.ro-Work-content {
+  @include media("≥X") {
+    display: flex;
+    margin: 0 -12px;
+    position: relative;
+  }
+
+  // [class^='ro-Visual-shape'] {
+  //   position: absolute !important;
+  //   border-radius: 50%;
+  //   top: 30px !important;
+  //   z-index: -1;
+  //   left: 75px;
+  //   display: none;
+
+  //   + [class^='ro-Visual-shape'] {
+  //     left: 442px;
+  //   }
+  // }
+}
+
+.ro-Work-item {
+  line-height: 1.9;
+  font-size: 14px;
+  padding: 19px 0 2px;
+
+  @include media("≥X") {  
+    padding-top: 21px;
+    flex: 1 1 0;
+    position: relative;
+    
+    &.is-doubleWidth {
+      flex: none;
+      width: 40%;
+
+      .ro-Work-companyContent:not(.u-2col) p {
+        max-width: 700px;
+      }
+    }
+  }
+
+
+  p, 
+  .ro-Work-company {
+    margin: 0;
+    max-width: 342px;
+  }
+}
+
+.ro-Work-itemHeader {
+  padding-bottom: 7px;
+
+   ~ .ro-Work-itemHeader {
+    padding-top: 21px;
+
+    @include media("≥X") {
+      padding-top: 9px;
+    }
+  }
+}
+
+.ro-Work-company {
+  display: none;
+
+  @include media("≥X") { 
+    display: inline-block;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    position: relative;
+    bottom: 13px;
+
+    height: 1px;
+    margin: 2px 0 14px;
+    padding: 0 8px;
+
+    transition: opacity .2s;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+
+    opacity: .3;
+    color: #fff;
+    background-color: rgba(26, 13, 171, .87);
+  }
+
+  &:before {
+    position: absolute;
+    top: -12px;
+    left: 2px;
+    content: 'protected';
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+.ro-Work-companyType {
+  margin: 3px 4px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  position: relative;
+  counter-increment: company;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 2px;
+
+  @include media("≥X") {  
+    margin: 0;
+    max-width: 342px;
+  }
+
+  &:before {
+    content: counter(company);
+    // padding-right: 13px;
+    padding-right: 18px;
+
+    @include media("≥X") {  
+      padding-right: 15px;
+    }
+  }
+
+  &:after {
+    content: '○';
+    position: absolute;
+    font-size: 38px;
+    // top: -21px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
+    margin-top: -4px;
+  }
+}
+
+.ro-Work-companyContent {
+  line-height: 2;
+
+  @include media("≥X") {  
+    &.u-2col {
+      column-gap: 2px;
+    }
+  }
+}

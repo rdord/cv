@@ -34,7 +34,9 @@
 }
 
 .u-2col {
-  column-count: 2;
+  @include media("≥X") {  
+    column-count: 2;
+  }
 }
 
 

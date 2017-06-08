@@ -1,3 +1,11 @@
+.ro-Hero-header {
+  // padding-bottom: 3px;
+
+  @include media("≥X") {
+    // padding-bottom: 0;
+  }
+}
+
 @keyframes moveIn {
   from { transform: translateY(0px); }
   to { transform: translateY(3px); }
@@ -22,9 +30,17 @@
   font-family: 'Abril Fatface', cursive;
   font-size: 57px;
   letter-spacing: 0.01em;
-  line-height: 1.1;
   font-weight: 400;
   margin: 0;
+  // line-height: 56px;
+  // padding-bottom: 5px;
+  line-height: 53px;
+  padding-bottom: 2px;
+
+  @include media("≥X") {
+    line-height: 1.1;
+    padding-bottom: 0;
+  }  
 }
 
 // .ro-Hero-tag {
@@ -60,10 +76,19 @@
   font-family: 'Playfair Display', sans-serif;
   font-size: 16px;
   margin: 3px 4px;
-  line-height: 1.5;
   font-weight: 400;
   font-style: italic;
   letter-spacing: -0.03em;
+  line-height: 28px;
+  padding-right: 10px;
+  display: inline-block;
+
+  @include media("≥X") {
+    line-height: 1.5;
+    padding-right: 0;
+    display: inline;
+
+  }  
 }
 
 @keyframes fadeIn {
@@ -75,13 +100,19 @@
   font-size: 12px;
   font-weight: 600;
   padding-left: 3px;
-  margin-top: 9px;
+  margin-top: 6px;
+  word-spacing: 5px;
 
   &.is-animated {
     opacity: 0;
     animation: fadeIn 2.4s;
     animation-delay: .7s;
     animation-fill-mode: forwards;    
+  }
+
+  @include media("≥X") {
+    margin-top: 9px;
+    word-spacing: normal;
   }
 }
 

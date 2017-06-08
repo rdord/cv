@@ -1,0 +1,33 @@
+.ro-Xp-body {
+  // max-width: 478px;
+  max-width: 700px;
+  // padding-top: 17px;
+  // padding-top: 23px;
+  // padding-bottom: 54px;
+  // padding-left: 3px;
+  // padding: 23px 23px 54px 3px;
+  padding: 23px 19px 18px 3px;
+
+  @include media("≥X") {
+    padding: 24px 0 54px 3px;
+    column-count: 2;
+    column-gap: 26px;  
+  }  
+
+  p {
+    margin: 0;
+    line-height: 2;
+    font-size: 14px;
+    padding-bottom: 14px;
+
+    @include media("≥X") {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.ro-Xp-links {
+  padding-left: 0;
+  margin-top: 7px;
+  animation-delay: 1.2s;
+}
