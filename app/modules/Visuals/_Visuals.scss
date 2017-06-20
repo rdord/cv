@@ -4,32 +4,82 @@
 }
 
 .ro-Visual {
-  z-index: -1;
-  position: absolute;
-  top: -40px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: moveInShapes 2.4s;
-  animation-fill-mode: forwards; 
+  padding-bottom: 20px;
 
-  [class^='ro-Visual-shape'] {
-    position: absolute !important;
-    border-radius: 50%;
-  } 
+  @include media("≥X") {
+    z-index: -1;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: moveInShapes 2.4s;
+    animation-fill-mode: forwards;
+    padding-bottom: 0;
+
+    [class^='ro-Visual-shape'] {
+      // I'm using !important to override the libs inline styles
+      position: absolute !important;
+      border-radius: 50%;
+    } 
+  }
+
+}
+
+.ro-Visual-heading {
+  @include media("≥X") {
+    display: none;
+  }
 }
 
 .ro-Visual-shape1 {
-  @include size(716px);
+  @include media("≥X") {
+    @include size(716px);
+    left: auto !important;
+    top: 10px !important;
+    right: 224px !important;
+    background:  #FF91AF;
+    z-index: -2;
+    filter: blur(2px);
 
-  left: auto !important;
-  top: 10px !important;
-  right: 224px !important;
-  // background: radial-gradient(ellipse at 57% 47%, #77A1D3 0%, #79cbca 60%, #e684ae 94%);
-  background:  #FF91AF;
-  z-index: -2;
+  }
 }
 
-.ro-Visual-shape1Border {
-  filter: hue-rotate(10deg);
+.ro-Visual-shapeBorder {
+  @include media("≥X") {
+    filter: hue-rotate(10deg);
+  }
+}
+
+.ro-Visual-contact {
+  padding-top: 1px;
+  display: inline-block;
+
+  &:before {
+    content: attr(data-clipboard-text);
+  }
+
+  span {
+    display: none;
+  }
+
+  @include media("≥X") {
+    padding-top: 0;
+
+    &:before {
+      display: none;
+    }
+
+    span {
+      display: inline;
+    }  
+  }
+}
+
+.ro-Visual-tooltip {
+  display: none;
+
+  @include media("≥X") {
+    display: block;
+  }
 }

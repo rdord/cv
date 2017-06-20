@@ -1,8 +1,10 @@
 .ro-Hero-header {
   // padding-bottom: 3px;
+  max-width: 322px;
 
-  @include media("≥X") {
+  @include media("≥D") {
     // padding-bottom: 0;
+    max-width: none;
   }
 }
 
@@ -11,7 +13,10 @@
   to { transform: translateY(3px); }
 }
 
-// .ro-Hero-title {
+.ro-Hero-title {
+  top: -37px;
+  text-transform: none;
+  color: #FF91AF;
 //   padding: 0 3px 6px;
 //   position: relative;
 //   top: 3px;
@@ -23,7 +28,7 @@
 //     animation-delay: .2s;
 //     animation-fill-mode: forwards;    
 //   }
-// }
+}
 
 // .ro-Hero-tag,
 .ro-Hero-heading {
@@ -117,21 +122,37 @@
 }
 
 .ro-Hero--availability {
-  display: inline-block;
-  padding: 15px 40px;
-  margin-left: -219px;
-  position: absolute;
-  top: 169px !important;
-  left: 50% !important;
 
-  &.is-animated {
-    opacity: 0;
-    animation: fadeIn 4.8s;
-    animation-delay: 1.4s;
-    animation-fill-mode: forwards;    
-  }
+  @include media("≥X") {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-left: -219px;
+    position: absolute;
+    // top: 169px !important;
+    // left: 50% !important;
+    color: rgba(26, 13, 171, 0.87);
+    left: auto !important;
+    right: 381px !important;
+    top: 179px !important;
+
+    &.is-animated {
+      opacity: 0;
+      animation: fadeIn 4.8s;
+      animation-delay: 1.4s;
+      animation-fill-mode: forwards;    
+    }
+  } 
 
   .ro-Hero-header {
     margin: 0;
+    display: none;
+
+    @include media("≥X") {
+      display: block;
+    }
   }  
+
+  .ro-Hero-heading {
+    text-transform: uppercase;
+  }
 }

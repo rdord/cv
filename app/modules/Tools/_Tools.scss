@@ -3,13 +3,14 @@
   font-size: 12px;
   font-weight: 600;
   padding-left: 4px;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   column-count: 3;
   margin: 12px 0 8px;
 
   @include media("≥X") {
     margin-top: 26px;
     column-count: 15;
+    // padding-bottom: 30px;
   }
 
   li {

@@ -11,6 +11,8 @@ body {
   // padding: 34px 12px 0;
   // padding: 40px 12px 0;
   padding: 49px 12px 0;
+  // position: relative;
+  // top: -108px;
 
   @include media("≥G") {
     padding-top: 31px;
@@ -46,3 +48,12 @@ a {
     opacity: 0.18;
   }
 }
+
+// Colors
+
+// pinks: B2546E, #FF91AF
+// yello: FFF9AA
+// blues: 5D9EB2, 60B2CC
+
+// pinks: B2546E, #FF91AF, FFAAC2
+// greens: 42B250, 91FF9F

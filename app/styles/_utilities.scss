@@ -34,9 +34,14 @@
 }
 
 .u-2col {
-  @include media("≥X") {  
+  @include media("≥D") {  
     column-count: 2;
+    column-gap: 26px;
   }
+}
+
+.u-nosplit {
+  display: inline-block;
 }
 
 

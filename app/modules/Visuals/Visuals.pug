@@ -1,11 +1,29 @@
 #ro-Visual.ro-Visual
-  .ro-Visual-shape1.ro-Visual-shape1Border.layer(data-depth='0.20')
+  .ro-Visual-shape1.ro-Visual-shapeBorder.layer(data-depth='0.20')
   .ro-Visual-shape1.layer(data-depth='0.10')
-    a.ro-Hero.ro-Hero--availability.is-animated.layer(href='mailto:rdorde@gmail.com')
+    //- .ro-Hero.ro-Hero--availability.is-animated.layer.u-holder
+      h1.ro-Visual-heading.u-title Contact
       p.ro-Hero-header
-        span.ro-Hero-heading AVAILABLE
+        span.ro-Hero-heading Available
         br
         // <span class="ro-Hero-subheading">for CSS3 and javascript work on an interesting project.</span>
         span.ro-Hero-subheading for CSS3 and javascript work on a premium project.
       p.ro-Hero-links
-        span Contact
+        span.ro-Visual-contact(data-clipboard-text="rdorde@gmail.com") Get email ←
+
+  .ro-Hero.ro-Hero--availability.is-animated.u-holder.layer(data-depth='0.12')
+    h1.ro-Visual-heading.u-title Contact
+    //- p You already have a No but you might get a Yes – just ask.
+    p.ro-Hero-header
+      span.ro-Hero-heading Available
+      br
+      // <span class="ro-Hero-subheading">for CSS3 and javascript work on an interesting project.</span>
+      span.ro-Hero-subheading for CSS3 and javascript work on a premium project.
+    p.ro-Hero-links
+      a(href='mailto:rdorde@gmail.com').ro-Visual-contact(data-clipboard-text="rdorde@gmail.com")
+        //- span You already have a No but you might get a Yes – 
+        //- span(style="text-decoration: underline;") just ask.
+        span Get email ←
+          span.ro-Visual-tooltip 
+            span.ro-Visual-defaultMsg Copy to clipboard
+            span.ro-Visual-successMsg Copied

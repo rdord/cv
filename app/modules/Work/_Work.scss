@@ -15,8 +15,12 @@
 }
 
 .ro-Work-content {
-  @include media("≥X") {
+  @include media("≥D") {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include media("≥X") {  
     margin: 0 -12px;
     position: relative;
   }
@@ -40,10 +44,36 @@
   font-size: 14px;
   padding: 19px 0 2px;
 
+  @include media("≥D") {
+    &.u-2items,
+    &:not(.u-2items) .ro-Work-companyContent{ 
+      column-count: 2;
+      column-gap: 26px;
+    }
+  }
+
+  @include media("≥E") { 
+    flex: 0 0 337px;
+    padding-right: 26px;
+    
+    &.is-doubleWidth {
+      flex-basis: 700px;
+    }
+
+    &.u-2items,
+    &:not(.u-2items) .ro-Work-companyContent:not(.u-2col) { 
+      column-count: auto;
+    }
+  }
+
   @include media("≥X") {  
     padding-top: 21px;
-    flex: 1 1 0;
-    position: relative;
+    // flex: 1 1 0;
+    // position: relative;
+
+    &:nth-last-child(2) {
+      padding-right: 0;
+    }
     
     &.is-doubleWidth {
       flex: none;
@@ -55,19 +85,52 @@
     }
   }
 
-
   p, 
   .ro-Work-company {
     margin: 0;
-    max-width: 342px;
+    max-width: 322px;
+
+    @include media("≥D") {
+      // max-width: 668px;
+      max-width: 700px;
+      // column-count: 2;
+      column-gap: 26px;
+    }
+
+    @include media("≥X") {
+      max-width: 342px;
+      column-count: auto;
+    }
+  }
+
+  p {
+
   }
 }
 
 .ro-Work-itemHeader {
   padding-bottom: 7px;
+  max-width: 330px;
+
+  @include media("≥D") { 
+    max-width: 220px;
+  }
+
+  @include media("≥X") {
+    max-width: none;
+  }
 
    ~ .ro-Work-itemHeader {
     padding-top: 21px;
+
+    @include media("≥D") { 
+      padding-top: 0;
+    }
+
+    @include media("≥E") { 
+      padding-top: 7px;
+      // padding-top: 35px;
+    }
 
     @include media("≥X") {
       padding-top: 9px;
@@ -123,32 +186,43 @@
   counter-increment: company;
   display: flex;
   align-items: center;
-  margin: 0 0 0 2px;
+  // margin: 0 0 0 2px;
+  margin: 0;
 
   @include media("≥X") {  
-    margin: 0;
     max-width: 342px;
-  }
 
-  &:before {
-    content: counter(company);
-    // padding-right: 13px;
-    padding-right: 18px;
+    &:before {
+      content: counter(company);
+      // padding-right: 13px;
+      // padding-right: 18px;
 
-    @include media("≥X") {  
-      padding-right: 15px;
+      // @include media("≥X") {  
+        padding-right: 15px;
+      // }
+    }
+
+    &:after {
+      content: '○';
+      position: absolute;
+      font-size: 38px;
+      // top: -21px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -8px;
+      margin-top: -4px;
     }
   }
+}
 
-  &:after {
-    content: '○';
-    position: absolute;
-    font-size: 38px;
-    // top: -21px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -8px;
-    margin-top: -4px;
+.ro-Work-companyLocation {
+
+   @include media("≥D") {
+    display: none;
+  }
+
+  @include media("≥X") {
+    display: inline;
   }
 }
 

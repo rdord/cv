@@ -53,7 +53,7 @@ jQuery(function($) {
   // visuals.parallax();
 
   // var scene = $('ro-Visual').get(0)
-var scene = document.getElementById('ro-Visual');
-var parallax = new Parallax(scene)
+// var scene = document.getElementById('ro-Visual');
+// var parallax = new Parallax(scene)
 
 });
