@@ -13,20 +13,41 @@
 
   @include media("≥E") {
     column-count: 6;
+    column-gap: 30px;
+    width: 705px;
   }
 
-  @include media("≥G") {
+  @media (min-width: 1137px) {
+    width: 949px;
     column-count: 8;
   }
 
-  @include media("≥X") {
+  // @media (min-width: 1563px) {
+  @media (min-width: 1590px) {
+    width: 1444px;
+    column-count: 12;
+  }  
+
+  @media (min-width: 1910px) {
+    width: auto;
     margin-top: 26px;
     column-count: 15;
-    // padding-bottom: 30px;
   }
+
+  // @include media("≥G") {
+  //   column-count: 8;
+  // }
+
+  // @include media("≥X") {
+  //   width: auto;
+  //   margin-top: 26px;
+  //   column-count: 15;
+  //   // padding-bottom: 30px;
+  // }
 
   li {
     line-height: 2.4;
+    white-space: nowrap;
   }
 
   abbr {
@@ -47,7 +68,7 @@
 .ro-Tools-emptyItem {
   display: none;
 
-  @include media("≥X") {
+  @media (min-width: 1910px) {
     display: list-item;
   }
 

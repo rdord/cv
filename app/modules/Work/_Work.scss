@@ -48,16 +48,21 @@
     &.u-2items,
     &:not(.u-2items) .ro-Work-companyContent{ 
       column-count: 2;
-      column-gap: 26px;
+      column-gap: 14px;
     }
   }
 
   @include media("≥E") { 
-    flex: 0 0 337px;
-    padding-right: 26px;
+    flex: 0 0 340px;
+    padding-right: 30px;
+
+    &, &.u-2items,
+    &:not(.u-2items) .ro-Work-companyContent { 
+      column-gap: 30px;
+    }
     
     &.is-doubleWidth {
-      flex-basis: 700px;
+      flex-basis: 710px;
     }
 
     &.u-2items,
@@ -70,6 +75,7 @@
     padding-top: 21px;
     // flex: 1 1 0;
     // position: relative;
+    column-gap: 30px;
 
     &:nth-last-child(2) {
       padding-right: 0;
@@ -77,10 +83,10 @@
     
     &.is-doubleWidth {
       flex: none;
-      width: 40%;
+      width: 710px;
 
       .ro-Work-companyContent:not(.u-2col) p {
-        max-width: 700px;
+        max-width: 710px;
       }
     }
   }
@@ -88,17 +94,18 @@
   p, 
   .ro-Work-company {
     margin: 0;
-    max-width: 322px;
+    // max-width: 322px;
 
     @include media("≥D") {
       // max-width: 668px;
-      max-width: 700px;
+      max-width: 710px;
       // column-count: 2;
-      column-gap: 26px;
+      column-gap: 30px;
     }
 
     @include media("≥X") {
-      max-width: 342px;
+      max-width: 340px;
+      // max-width: 339px;
       column-count: auto;
     }
   }
@@ -184,13 +191,16 @@
   letter-spacing: 0.03em;
   position: relative;
   counter-increment: company;
-  display: flex;
-  align-items: center;
   // margin: 0 0 0 2px;
   margin: 0;
 
+  @include media("≥D") {
+    display: flex;
+    align-items: center;
+  }
+
   @include media("≥X") {  
-    max-width: 342px;
+    max-width: 340px;
 
     &:before {
       content: counter(company);
@@ -216,6 +226,11 @@
 }
 
 .ro-Work-companyLocation {
+  display: none;
+
+   @include media("≥C") {
+    display: inline;
+  }
 
    @include media("≥D") {
     display: none;

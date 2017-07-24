@@ -6,7 +6,7 @@
 .ro-Visual {
   padding-bottom: 20px;
 
-  @include media("≥X") {
+  @include media("≥H") {
     z-index: -1;
     position: absolute;
     top: -40px;
@@ -27,13 +27,13 @@
 }
 
 .ro-Visual-heading {
-  @include media("≥X") {
+  @include media("≥H") {
     display: none;
   }
 }
 
 .ro-Visual-shape1 {
-  @include media("≥X") {
+  @include media("≥H") {
     @include size(716px);
     left: auto !important;
     top: 10px !important;
@@ -46,7 +46,7 @@
 }
 
 .ro-Visual-shapeBorder {
-  @include media("≥X") {
+  @include media("≥H") {
     filter: hue-rotate(10deg);
   }
 }
@@ -63,7 +63,7 @@
     display: none;
   }
 
-  @include media("≥X") {
+  @include media("≥H") {
     padding-top: 0;
 
     &:before {
@@ -79,7 +79,7 @@
 .ro-Visual-tooltip {
   display: none;
 
-  @include media("≥X") {
+  @include media("≥H") {
     display: block;
   }
 }

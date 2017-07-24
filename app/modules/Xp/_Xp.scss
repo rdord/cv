@@ -5,8 +5,9 @@
   // padding-bottom: 54px;
   // padding-left: 3px;
   // padding: 23px 23px 54px 3px;
-  padding: 23px 19px 18px 3px;
-  max-width: 322px;
+  // padding: 23px 19px 18px 3px;
+  padding: 23px 0 18px 3px;
+  // max-width: 322px;
 
   @include media("≥C") {
     padding-right: 3px;
@@ -14,10 +15,17 @@
 
   @include media("≥D") {
     column-count: 2;
-    column-gap: 26px;  
-    max-width: 700px;
-    padding: 24px 0 54px 3px;
+    column-gap: 14px;  
+    max-width: 718px;
+    padding: 24px 0 32px 3px;
   }  
+
+
+  @include media("≥X") { 
+    // padding-bottom: 54px;
+    max-width: 710px;
+    column-gap: 30px;
+  }
 
   p {
     margin: 0;
@@ -25,7 +33,7 @@
     font-size: 14px;
     padding-bottom: 14px;
 
-    @include media("≥E") {
+    @include media("≥D") {
       padding-bottom: 0;
     }
   }

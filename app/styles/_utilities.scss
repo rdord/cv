@@ -36,7 +36,7 @@
 .u-2col {
   @include media("≥D") {  
     column-count: 2;
-    column-gap: 26px;
+    column-gap: 30px;
   }
 }
 

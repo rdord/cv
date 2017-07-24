@@ -7,14 +7,18 @@
   // background-color: lightblue;
   z-index: -2;
   opacity: 0;
-  transition: opacity .5s ease-in-out;
-  // opacity: 1;
+  transition: opacity .8s ease-in-out;
+  opacity: 1;
 }
 
 .ro-Grid--rows {
   .ro-Grid-holder {
     display: grid;
-    grid-template-rows: repeat(100, 14px);
+    grid-template-rows: repeat(170, 14px);
+
+    @include media("≥X") {
+      grid-template-rows: repeat(100, 14px);
+    }
     
     .ro-Grid-item {
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -31,10 +35,30 @@
   position: fixed;
   z-index: -3;
 
+  @include media("≥E") {  
+    width: 1818px;
+    padding: 0 12px;
+  }
+
+  @include media("≥W") {
+    padding: 0 40px;
+  }
+
   .ro-Grid-holder {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
+    padding: 0 15px;
+
+    @include media("≥D") {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media("≥E") {
+      grid-template-columns: repeat(15, 1fr);
+      padding: 0;
+      grid-column-gap: 30px;
+    }
 
     &, .ro-Grid-item {
       height: 100vh;

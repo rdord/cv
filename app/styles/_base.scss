@@ -14,13 +14,25 @@ body {
   // position: relative;
   // top: -108px;
 
-  @include media("≥G") {
-    padding-top: 31px;
-  }  
+  // @include media("≥G") {
+  //   padding-top: 31px;
+  // }  
 
   @include media("≥W") {
-    padding: 87px 40px 0;
+    // padding: 87px 40px 0;
+    padding: 91px 40px 0;
   }  
+
+  @include media("≥X") {  
+    overflow-x: hidden;
+    padding-top: 87px;
+
+    > div:not(.ro-Grid--rows), 
+    > section {
+      max-width: 1823px;
+      margin: 0 auto;
+    }
+  }
 }
 
 a {
