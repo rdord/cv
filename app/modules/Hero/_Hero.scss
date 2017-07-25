@@ -134,15 +134,21 @@
 
   @include media("≥H") {
     display: inline-block;
-    padding: 15px 40px;
-    margin-left: -219px;
+    // padding: 15px 40px;
+    // margin-left: -219px;
     position: absolute;
     // top: 169px !important;
     // left: 50% !important;
     color: rgba(26, 13, 171, 0.87);
-    left: auto !important;
-    right: 381px !important;
-    top: 179px !important;
+    // left: auto !important;
+    // right: 381px !important;
+    // right: 157px !important;
+    // top: 179px !important;
+    // left: 359px !important;
+    // top: 169px !important;
+
+        left: 180px !important;
+    top: 184px !important;
 
     &.is-animated {
       opacity: 0;

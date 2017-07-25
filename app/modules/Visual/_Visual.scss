@@ -18,7 +18,8 @@
     padding-bottom: 0;
     @include size(716px);
     top: -30px;
-    right: 224px;
+    // right: 224px;
+    left: 963px;
 
     [class^='ro-Visual-shape'] {
       // I'm using !important to override the libs inline styles
@@ -38,9 +39,11 @@
 .ro-Visual-shape1 {
   @include media("≥H") {
     @include size(716px);
-    left: auto !important;
-    top: 10px !important;
-    right: 224px !important;
+    left: 0 !important;
+    // top: 10px !important;
+    top: 0 !important;
+    // right: 224px !important;
+    // right: 0 !important;
     background:  #FF91AF;
     z-index: -2;
     filter: blur(2px);
