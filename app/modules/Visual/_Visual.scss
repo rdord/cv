@@ -9,13 +9,16 @@
   @include media("≥H") {
     z-index: -1;
     position: absolute;
-    top: -40px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    // top: -40px;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
     animation: moveInShapes 2.4s;
     animation-fill-mode: forwards;
     padding-bottom: 0;
+    @include size(716px);
+    top: -30px;
+    right: 224px;
 
     [class^='ro-Visual-shape'] {
       // I'm using !important to override the libs inline styles

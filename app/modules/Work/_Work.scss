@@ -20,6 +20,10 @@
     flex-wrap: wrap;
   }
 
+  @include media("≥E") {
+    min-width: 740px;
+  }
+
   @include media("≥X") {  
     margin: 0 -12px;
     position: relative;
@@ -68,6 +72,12 @@
     &.u-2items,
     &:not(.u-2items) .ro-Work-companyContent:not(.u-2col) { 
       column-count: auto;
+    }
+  }
+
+  @media (min-width: 1563px) {
+    &:last-child {
+      flex-basis: 710px;
     }
   }
 
