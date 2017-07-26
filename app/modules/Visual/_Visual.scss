@@ -17,15 +17,19 @@
     animation-fill-mode: forwards;
     padding-bottom: 0;
     @include size(716px);
-    top: -30px;
+    top: -30px !important;
     // right: 224px;
-    left: 963px;
+    left: 703px !important;
 
     [class^='ro-Visual-shape'] {
       // I'm using !important to override the libs inline styles
       position: absolute !important;
       border-radius: 50%;
     } 
+  }
+
+  @include media("≥W") {
+    left: 963px !important;
   }
 
 }
