@@ -1,6 +1,10 @@
 .ro-Work {
   padding-bottom: 30px;
 
+  @include media("≥H") {
+    z-index: 1;
+  }
+
   @include media("≥X") { 
     padding-bottom: 44px;
   }

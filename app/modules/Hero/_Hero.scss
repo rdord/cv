@@ -163,13 +163,20 @@
   .ro-Hero-header {
     margin: 0;
     display: none;
+    // transition: opacity .4s;
 
     @include media("≥H") {
       display: block;
+      position: relative;
+      z-index: -1;
     }
   }  
 
   .ro-Hero-heading {
     text-transform: uppercase;
+  }
+
+  .ro-Hero-links {
+    z-index: 1;
   }
 }

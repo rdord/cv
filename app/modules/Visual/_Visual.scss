@@ -7,7 +7,7 @@
   padding-bottom: 20px;
 
   @include media("≥H") {
-    z-index: -1;
+    // z-index: -1;
     position: absolute;
     // top: -40px;
     // right: 0;
@@ -64,9 +64,23 @@
 .ro-Visual-contact {
   padding-top: 1px;
   display: inline-block;
+  position: relative;
 
   &:before {
     content: attr(data-clipboard-text);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    bottom: -100px;
+    left: -100px;
+    // border: 1px dashed transparent;
+    // transition: border-color .2s, background-color .2s;
+    // transition-delay: 0;
+    z-index: -1;
   }
 
   span {
@@ -75,6 +89,21 @@
 
   @include media("≥H") {
     padding-top: 0;
+
+    &:hover {
+
+
+      &:after {
+        // background-color: rgba(26, 13, 171, 0.04);
+        // border: 1px dashed rgba(26, 13, 171, 0.87);
+        // border-color: rgba(26, 13, 171, 0.87);
+        // transition-delay: .1s;
+        
+        // border-color: #1a0dab;
+        // background-color: #ffa8c1;
+        // transition: border-color .2s, background-color .2s;
+      }
+    }
 
     &:before {
       display: none;
