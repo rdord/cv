@@ -12,6 +12,8 @@
 }
 
 .ro-Grid--rows {
+  overflow: hidden;
+  
   .ro-Grid-holder {
     display: grid;
     grid-template-rows: repeat(170, 14px);

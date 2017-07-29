@@ -6,6 +6,7 @@
   padding-bottom: 23px;
   column-count: 3;
   margin: 12px 0 8px;
+  // column-gap: 67px;
 
   @include media("≥D") {
     column-count: 4;
