@@ -1,6 +1,35 @@
 jQuery(function ($) { 
-  var scene = document.getElementById('ro-Visual');
-  if(scene) var parallax = new Parallax(scene);
+  var mediaQuery = window.matchMedia('(min-width: 1280px)');
+  var visual = document.getElementById('ro-Visual');
+  var circle1 = document.getElementById('ro-Circle--1');
+  var circle2 = document.getElementById('ro-Circle--2');
+  var circle3 = document.getElementById('ro-Circle--3');
+  // var parallax = new Parallax(visual);
+  // parallax.disable();
+  
+  // Add a listen event
+  mediaQuery.addListener(doSomething);
+  
+  // Function to do something with the media query
+  function doSomething(mediaQuery) {    
+    if (mediaQuery.matches && visual) {
+      // parallax.enable();
+      var parallax = new Parallax(visual);
+    } else {
+      // parallax.disable();
+      var parallax2 = new Parallax(circle1);
+      var parallax3 = new Parallax(circle2);
+      var parallax4 = new Parallax(circle3);
+    }
+  }
+  
+  // On load
+  doSomething(mediaQuery);
+
+
+
+  
+  
 
   // var clipboard = new Clipboard('.ro-Visual');
   // var header = $('.ro-Hero-header', '.ro-Hero--availability');
