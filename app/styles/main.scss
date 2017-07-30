@@ -7,9 +7,10 @@ $breakpoints: (A: 320px, B: 360px, C: 375px, D: 480px, E: 753px, F: 768px, G: 10
 
 
 @import '../vendor/include-media';
-@import '/bower_components/normalize-css/normalize.css';
+// @import '/bower_components/normalize-css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Abril+Fatface|Open+Sans:400,600,700,800');
 
+@import '../vendor/normalize';
 @import './mixins';
 @import './utilities';
 @import './base';
@@ -19,5 +20,6 @@ $breakpoints: (A: 320px, B: 360px, C: 375px, D: 480px, E: 753px, F: 768px, G: 10
 @import '../modules/Work/Work';
 @import '../modules/Tools/Tools';
 @import '../modules/Visual/Visual';
+@import '../modules/Circle/Circle';
 @import '../modules/Grid/Grid';
 
