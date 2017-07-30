@@ -8,10 +8,10 @@ jQuery(function ($) {
   // parallax.disable();
   
   // Add a listen event
-  mediaQuery.addListener(doSomething);
+  mediaQuery.addListener(initParallax);
   
   // Function to do something with the media query
-  function doSomething(mediaQuery) {    
+  function initParallax(mediaQuery) {    
     if (mediaQuery.matches && visual) {
       // parallax.enable();
       var parallax = new Parallax(visual);
@@ -24,7 +24,7 @@ jQuery(function ($) {
   }
   
   // On load
-  doSomething(mediaQuery);
+  initParallax(mediaQuery);
 
 
 
