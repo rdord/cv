@@ -2,8 +2,15 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-jQuery(function($) {
+function ready(fn) {
+  if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
 
+ready(function(){
   var timer, el = $('body'),
       flag = false;
 
@@ -47,7 +54,7 @@ jQuery(function($) {
   });
 
 
-  $('.ro-Hero-tagIcon').on('click', e => e.target.classList.add('is-shattered'));
+  // $('.ro-Hero-tagIcon').on('click', e => e.target.classList.add('is-shattered'));
 
   // const visuals = $('.ro-Visual').get(0);
   // visuals.parallax();
@@ -56,4 +63,25 @@ jQuery(function($) {
 // var scene = document.getElementById('ro-Visual');
 // var parallax = new Parallax(scene)
 
+  var mediaQuery = window.matchMedia('(min-width: 1280px)');
+  var visual = document.getElementById('ro-Visual');
+  var circle1 = document.getElementById('ro-Circle--1');
+  var circle2 = document.getElementById('ro-Circle--2');
+  var circle3 = document.getElementById('ro-Circle--3');
+
+  mediaQuery.addListener(initParallax);
+  
+  function initParallax(mediaQuery) {    
+    if (mediaQuery.matches && visual) {
+      // parallax.enable();
+      var parallax = new Parallax(visual);
+    } else {
+      // parallax.disable();
+      var parallax2 = new Parallax(circle1);
+      var parallax3 = new Parallax(circle2);
+      var parallax4 = new Parallax(circle3);
+    }
+  }
+  
+  initParallax(mediaQuery);
 });
