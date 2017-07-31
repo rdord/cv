@@ -1,10 +1,7 @@
 .ro-Hero-header {
-  // padding-bottom: 3px;
-  // max-width: 322px;
   max-width: 288px;
 
   @include media("≥D") {
-    // padding-bottom: 0;
     max-width: none;
   }
 }
@@ -18,28 +15,14 @@
   top: -37px;
   text-transform: none;
   color: #FF91AF;
-//   padding: 0 3px 6px;
-//   position: relative;
-//   top: 3px;
-//   visibility: hidden;
-
-//   &.is-animated {
-//     top: 0;
-//     animation: moveIn .8s;
-//     animation-delay: .2s;
-//     animation-fill-mode: forwards;    
-//   }
 }
 
-// .ro-Hero-tag,
 .ro-Hero-heading {
   font-family: 'Abril Fatface', cursive;
   font-size: 57px;
   letter-spacing: 0.01em;
   font-weight: 400;
   margin: 0;
-  // line-height: 56px;
-  // padding-bottom: 5px;
   line-height: 53px;
   padding-bottom: 2px;
 
@@ -52,35 +35,6 @@
   }  
 }
 
-// .ro-Hero-tag {
-//   position: absolute;
-//   top: 290px;
-//   right: 400px;
-// }
-
-// .ro-Hero-tagIcon {
-//   font-size: 12px;
-//   padding-left: 1px;
-//   cursor: pointer;
-//   filter: blur(0px);
-//   transition: filter .5s; 
-//   position: relative;
-
-//   &.is-shattered {
-//     filter: blur(100px) ;
-//   }
-
-//   // for larger hoverable area
-//   &:before {
-//     content: '';
-//     position: absolute;
-//     top: -10px;
-//     right: -10px;
-//     bottom: -10px;
-//     left: -10px;
-//   }
-// }
-
 .ro-Hero-subheading {
   font-family: 'Playfair Display', sans-serif;
   font-size: 16px;
@@ -92,12 +46,10 @@
   padding-right: 10px;
   display: inline-block;
 
-
   @include media("≥X") {
     line-height: 1.5;
     padding-right: 0;
     display: inline;
-
   }  
 }
 
@@ -134,27 +86,14 @@
 
   @include media("≥H") {
     display: inline-block;
-    // padding: 15px 40px;
-    // margin-left: -219px;
     position: absolute;
-    // top: 169px !important;
-    // left: 50% !important;
     color: rgba(26, 13, 171, 0.87);
-    // left: auto !important;
-    // right: 381px !important;
-    // right: 157px !important;
-    // top: 179px !important;
-    // left: 359px !important;
-    // top: 169px !important;
-
-        left: 180px !important;
+    left: 180px !important;
     top: 184px !important;
 
     &.is-animated {
       opacity: 0;
-      // animation: fadeIn 4.8s;
       animation: fadeIn 2.4s;
-      // animation-delay: 1.4s;
       animation-delay: .7s;
       animation-fill-mode: forwards;    
     }
@@ -163,7 +102,6 @@
   .ro-Hero-header {
     margin: 0;
     display: none;
-    // transition: opacity .4s;
 
     @include media("≥H") {
       display: block;

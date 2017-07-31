@@ -32,19 +32,6 @@
     margin: 0 -12px;
     position: relative;
   }
-
-  // [class^='ro-Visual-shape'] {
-  //   position: absolute !important;
-  //   border-radius: 50%;
-  //   top: 30px !important;
-  //   z-index: -1;
-  //   left: 75px;
-  //   display: none;
-
-  //   + [class^='ro-Visual-shape'] {
-  //     left: 442px;
-  //   }
-  // }
 }
 
 .ro-Work-item {
@@ -91,8 +78,6 @@
 
   @include media("≥X") {  
     padding-top: 21px;
-    // flex: 1 1 0;
-    // position: relative;
     column-gap: 30px;
 
     &:nth-last-child(2) {
@@ -109,27 +94,18 @@
     }
   }
 
-  p, 
-  .ro-Work-company {
+  p, .ro-Work-company {
     margin: 0;
-    // max-width: 322px;
 
     @include media("≥D") {
-      // max-width: 668px;
       max-width: 710px;
-      // column-count: 2;
       column-gap: 30px;
     }
 
     @include media("≥X") {
       max-width: 340px;
-      // max-width: 339px;
       column-count: auto;
     }
-  }
-
-  p {
-
   }
 }
 
@@ -145,7 +121,7 @@
     max-width: none;
   }
 
-   ~ .ro-Work-itemHeader {
+  ~ .ro-Work-itemHeader {
     padding-top: 21px;
 
     @include media("≥D") { 
@@ -154,7 +130,6 @@
 
     @include media("≥E") { 
       padding-top: 7px;
-      // padding-top: 35px;
     }
 
     @include media("≥X") {
@@ -209,7 +184,6 @@
   letter-spacing: 0.03em;
   position: relative;
   counter-increment: company;
-  // margin: 0 0 0 2px;
   margin: 0;
 
   @include media("≥D") {
@@ -222,19 +196,13 @@
 
     &:before {
       content: counter(company);
-      // padding-right: 13px;
-      // padding-right: 18px;
-
-      // @include media("≥X") {  
-        padding-right: 15px;
-      // }
+      padding-right: 15px;
     }
 
     &:after {
       content: '○';
       position: absolute;
       font-size: 38px;
-      // top: -21px;
       top: 50%;
       transform: translateY(-50%);
       left: -8px;

@@ -1,8 +1,6 @@
 .ro-Circle {
   @include size(256px);
   position: absolute;
-  // top: -30px !important;
-  // left: 703px !important;
   top: 251px;
   right: 9px;
   z-index: -1;
@@ -33,12 +31,12 @@
 }
 
 .ro-Circle--2 {
-  @include size(236px);
+  @include size(232px);
   top: 407px;
   right: -35px;
 
   [class^='ro-Circle-shape'] {
-    @include size(236px);
+    @include size(232px);
     background-color: #fdff91;
   }
 }

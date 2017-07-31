@@ -4,7 +4,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  // background-color: lightblue;
   z-index: -2;
   opacity: 0;
   transition: opacity .8s ease-in-out;
@@ -29,9 +28,6 @@
 }
 
 .ro-Grid--columns {
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // max-width: 1849px;
   max-width: 1818px;
   margin: 0 auto;
   position: fixed;
@@ -68,15 +64,6 @@
 
     .ro-Grid-item {
       background-color: rgba(0, 0, 0, 0.03);
-      // background-color: red;
-      // opacity: 0.4;
     }
   }
 }
-
-.is-scrolling {
-  .ro-Grid {
-    opacity: 1;
-  }
-}
-
