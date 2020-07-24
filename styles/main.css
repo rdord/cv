@@ -745,7 +745,7 @@ a:hover {
     column-gap: 2px;
   }
 }
-body.is-scrolling .ro-Work-company {
+body.show-grid .ro-Work-company {
   opacity: 0.18;
 }
 .ro-Tools-list {
@@ -1052,7 +1052,7 @@ html.cssgrid .ro-Grid--columns .ro-Grid-holder .ro-Grid-item {
 html.cssgrid .ro-Grid--columns .ro-Grid-holder .ro-Grid-item {
   background-color: rgba(0, 0, 0, 0.03);
 }
-html.cssgrid body.is-scrolling .ro-Grid {
+html.cssgrid body.show-grid .ro-Grid {
   opacity: 1;
 }
 html.no-cssgrid .ro-Grid {

@@ -27,30 +27,30 @@ jQuery(document).ready(function ($) {
   // $(window).scroll(() => {
   //   if (!flag) {
   //     flag = true;
-  //     body.classList.add('is-scrolling');
+  //     body.classList.add('show-grid');
   //   }
 
   //   clearTimeout(timer);
   //   timer = setTimeout(() => {
-  //     body.classList.remove('is-scrolling');
+  //     body.classList.remove('show-grid');
   //     flag = false;
   //   }, 400);
   // });
 
   // $('.highlight').hover(
-  //   () => body.classList.add('is-scrolling'),
-  //   () => body.classList.remove('is-scrolling')
+  //   () => body.classList.add('show-grid'),
+  //   () => body.classList.remove('show-grid')
   // );
 
   function handler1() {
-    body.classList.add('is-scrolling');
+    body.classList.add('show-grid');
     $(this).one('click', handler2);
   }
   function handler2() {
-    body.classList.remove('is-scrolling');
+    body.classList.remove('show-grid');
     $(this).one('click', handler1);
   }
   $('.highlight').one('click', handler1);
 
-  // $('.highlight').click(() => body.classList.add('is-scrolling'));
+  // $('.highlight').click(() => body.classList.add('show-grid'));
 });
