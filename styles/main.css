@@ -986,7 +986,7 @@ html.cssgrid .ro-Grid {
   left: 0;
   z-index: -2;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 html.cssgrid .ro-Grid--rows {
   overflow: hidden;
@@ -1057,4 +1057,11 @@ html.cssgrid body.is-scrolling .ro-Grid {
 }
 html.no-cssgrid .ro-Grid {
   display: none;
+}
+.highlight {
+  /* border-bottom: 2px solid #ff91af; */
+  border-bottom: 3px solid #9391ff;
+  /* background-color: #fdff91; */
+  /* cursor: ne-resize; */
+  cursor: pointer;
 }

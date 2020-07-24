@@ -20,20 +20,37 @@ jQuery(document).ready(function ($) {
   mediaQuery.addListener(initParallax);
 
   // Add class to the body on scroll event
-  let timer;
-  let flag = false;
+  // let timer;
+  // let flag = false;
   let body = document.getElementsByTagName('body')[0];
 
-  $(window).scroll(() => {
-    if (!flag) {
-      flag = true;
-      body.classList.add('is-scrolling');
-    }
+  // $(window).scroll(() => {
+  //   if (!flag) {
+  //     flag = true;
+  //     body.classList.add('is-scrolling');
+  //   }
 
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      body.classList.remove('is-scrolling');
-      flag = false;
-    }, 70);
-  });
+  //   clearTimeout(timer);
+  //   timer = setTimeout(() => {
+  //     body.classList.remove('is-scrolling');
+  //     flag = false;
+  //   }, 400);
+  // });
+
+  // $('.highlight').hover(
+  //   () => body.classList.add('is-scrolling'),
+  //   () => body.classList.remove('is-scrolling')
+  // );
+
+  function handler1() {
+    body.classList.add('is-scrolling');
+    $(this).one('click', handler2);
+  }
+  function handler2() {
+    body.classList.remove('is-scrolling');
+    $(this).one('click', handler1);
+  }
+  $('.highlight').one('click', handler1);
+
+  // $('.highlight').click(() => body.classList.add('is-scrolling'));
 });
