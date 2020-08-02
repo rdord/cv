@@ -182,6 +182,9 @@ canvas {
 template {
   display: none;
 }
+body {
+  overflow-x: hidden;
+}
 .u-holder {
   position: relative;
 }
@@ -460,7 +463,7 @@ a:hover {
   z-index: 1;
 }
 .ro-Xp-body {
-  padding: 23px 0 18px 3px;
+  padding: 23px 0 18px;
 }
 @media (min-width: 375px) {
   .ro-Xp-body {
@@ -486,7 +489,6 @@ a:hover {
 }
 @media (min-width: 1280px) {
   .ro-Xp-body {
-    max-width: 720px;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -497,6 +499,9 @@ a:hover {
   line-height: 2;
   font-size: 14px;
   padding-bottom: 14px;
+}
+.ro-Work-body {
+  padding-left: 3px;
 }
 @media (min-width: 480px) {
   .ro-Xp-body p {
@@ -558,8 +563,8 @@ a:hover {
   .ro-Work-item:not(.u-2items) .ro-Work-companyContent:not(.u-3col) {
     -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 20px;
-    column-gap: 20px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
   }
 }
 @media (min-width: 753px) {
