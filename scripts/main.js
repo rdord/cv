@@ -19,28 +19,7 @@ jQuery(document).ready(function ($) {
   initParallax(mediaQuery);
   mediaQuery.addListener(initParallax);
 
-  // Add class to the body on scroll event
-  // let timer;
-  // let flag = false;
-  let body = document.getElementsByTagName('body')[0];
-
-  // $(window).scroll(() => {
-  //   if (!flag) {
-  //     flag = true;
-  //     body.classList.add('show-grid');
-  //   }
-
-  //   clearTimeout(timer);
-  //   timer = setTimeout(() => {
-  //     body.classList.remove('show-grid');
-  //     flag = false;
-  //   }, 400);
-  // });
-
-  // $('.highlight').hover(
-  //   () => body.classList.add('show-grid'),
-  //   () => body.classList.remove('show-grid')
-  // );
+  const [body] = document.getElementsByTagName('body');
 
   function handler1() {
     body.classList.add('show-grid');
@@ -51,6 +30,4 @@ jQuery(document).ready(function ($) {
     $(this).one('click', handler1);
   }
   $('.ro-Hero-highlight').one('click', handler1);
-
-  // $('.highlight').click(() => body.classList.add('show-grid'));
 });
