@@ -50,7 +50,7 @@ jQuery(document).ready(function ($) {
     body.classList.remove('show-grid');
     $(this).one('click', handler1);
   }
-  $('.highlight').one('click', handler1);
+  $('.ro-Hero-highlight').one('click', handler1);
 
   // $('.highlight').click(() => body.classList.add('show-grid'));
 });

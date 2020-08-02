@@ -213,6 +213,17 @@ template {
     -webkit-column-gap: 30px;
     column-gap: 30px;
   }
+
+  .u-3col {
+    -webkit-column-count: 3;
+    column-count: 3 !important;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .u-3col p {
+    max-width: 1080px;
+  }
 }
 .u-nosplit {
   display: inline-block;
@@ -292,7 +303,7 @@ a:hover {
   color: #1a0dab;
 }
 .ro-Hero-header {
-  max-width: 288px;
+  max-width: 298px;
 }
 @media (min-width: 480px) {
   .ro-Hero-header {
@@ -353,6 +364,7 @@ a:hover {
   line-height: 28px;
   padding-right: 10px;
   display: inline-block;
+  transition: color 0.4s ease-in-out;
 }
 @media (min-width: 1886px) {
   .ro-Hero-subheading {
@@ -451,8 +463,8 @@ a:hover {
   .ro-Xp-body {
     -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 14px;
-    column-gap: 14px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
     max-width: 718px;
     padding: 24px 0 32px 3px;
   }
@@ -540,8 +552,8 @@ a:hover {
   .ro-Work-item:not(.u-2items) .ro-Work-companyContent {
     -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 14px;
-    column-gap: 14px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 753px) {
@@ -560,6 +572,10 @@ a:hover {
   .ro-Work-item.is-doubleWidth {
     -ms-flex-preferred-size: 710px;
     flex-basis: 710px;
+  }
+  .ro-Work-item.is-tripleWidth {
+    -ms-flex-preferred-size: 1080px;
+    flex-basis: 1080px !important;
   }
   .ro-Work-item.u-2items,
   .ro-Work-item:not(.u-2items) .ro-Work-companyContent:not(.u-2col) {
@@ -891,6 +907,7 @@ body.show-grid .ro-Work-company {
   padding-top: 1px;
   display: inline-block;
   position: relative;
+  display: none;
 }
 .ro-Visual-contact:before {
   content: attr(data-clipboard-text);
@@ -910,6 +927,7 @@ body.show-grid .ro-Work-company {
 @media (min-width: 1280px) {
   .ro-Visual-contact {
     padding-top: 0;
+    display: inline;
   }
   .ro-Visual-contact:before {
     display: none;
@@ -1058,10 +1076,38 @@ html.cssgrid body.show-grid .ro-Grid {
 html.no-cssgrid .ro-Grid {
   display: none;
 }
-.highlight {
+.ro-Hero-subheading .ro-Hero-highlight {
   /* border-bottom: 2px solid #ff91af; */
   border-bottom: 3px solid #9391ff;
   /* background-color: #fdff91; */
   /* cursor: ne-resize; */
   cursor: pointer;
+}
+
+.ro-Hero-subheading .ro-Hero-highlight:active,
+.show-grid .ro-Hero-subheading {
+  color: #9391ff;
+}
+
+.show-grid .ro-Hero-subheading .ro-Hero-highlight {
+  /* border-bottom: 2px solid #9391ff; */
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+}
+
+.ro-Contact {
+  position: relative;
+  left: 1px;
+}
+
+@media (min-width: 1280px) {
+  .ro-Contact {
+    margin-bottom: 12px;
+  }
+}
+
+.ro-Contact-link {
+  font-size: 12px;
+  font-weight: 600;
+  word-spacing: 5px;
 }
