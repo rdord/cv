@@ -267,9 +267,7 @@ body {
 .u-width9 {
   width: 85px;
 }
-html {
-  overflow-x: hidden;
-}
+
 body {
   font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.87);
